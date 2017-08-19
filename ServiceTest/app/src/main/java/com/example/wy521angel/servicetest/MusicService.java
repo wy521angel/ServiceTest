@@ -6,7 +6,6 @@ import android.graphics.BitmapFactory;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.IBinder;
-import android.support.annotation.Nullable;
 import android.support.v7.app.NotificationCompat;
 import android.util.Log;
 
@@ -96,7 +95,6 @@ public class MusicService extends Service {
         stopSelf(startId);
     }
 
-    @Nullable
     @Override
     public IBinder onBind(Intent intent) {
         Log.e(TAG, "onBind");
